@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "b" {
   acl    = "private"
 
   tags = {
-    Name        = var.s3name
+    Name        = var.s3bucket
   }
   versioning {
     enabled = true
