@@ -16,6 +16,6 @@ resource "aws_instance" "prs_server" {
   ami="ami-0bac6fc47ad07c5f5"
   instance_type="t2.micro"
   tags = {
-    Name = "Parth"
+    Name = var.instance_name
   }
 }
