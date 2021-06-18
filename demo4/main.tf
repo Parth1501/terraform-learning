@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "b" {
-  bucket = "parth"
+  bucket = "parth9978196176"
   acl    = "private"
 
   tags = {
