@@ -1,9 +1,9 @@
 resource "aws_instance" "prs" {
 
-    ami=vars.AMI_REGIONS[var.AMI_REGION]
+    ami=var.AMI_REGIONS[var.AMI_REGION]
     instance_type="t2.micro"
 
-    subnet_id=""
+    subnet_id = aws_subnet.main-public-1.id
 
     vpc_security_group_ids=[aws_security_group.allow-ssh.id]  
 
