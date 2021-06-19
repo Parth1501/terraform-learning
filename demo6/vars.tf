@@ -2,13 +2,13 @@ variable "AMI_REGION" {
   default= "us-east-2"
 }
 
-variable "AMI_REGIONS" {
-  type=map(string)
+variable "AMIS" {
+  type = map(string)
   default = {
-    us-east-2 = "us-east-2"
-    us-west-1 = "us-west-1"
-    us-east-1 = "us-east-1"
-    ap-south-1 = "ap-south-1"
+    us-east-1 = "ami-13be557e"
+    us-west-2 = "ami-06b94666"
+    eu-west-1 = "ami-844e0bf7"
+    us-east-2 = "ami-0d563aeddd4be7fff"
   }
 }
 
